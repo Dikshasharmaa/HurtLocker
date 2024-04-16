@@ -2,11 +2,11 @@ import java.util.Date;
 
 public class Items {
     private String name;
-    private Double price;
+    private String price;
     private String expiration;
     private String type;
 
-    public Items(String name, Double price, String expiration, String type) {
+    public Items(String name, String price, String expiration, String type) {
         this.name = name;
         this.price = price;
         this.expiration = expiration;
@@ -21,11 +21,11 @@ public class Items {
         this.name = name;
     }
 
-    public Double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -46,6 +46,7 @@ public class Items {
     }
     @Override
     public String toString(){
+        // string builder
         return "Items{" +
                 "name" + name + '\''+
                 "price" + price + '\''+
