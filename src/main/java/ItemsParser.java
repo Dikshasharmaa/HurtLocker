@@ -87,7 +87,8 @@ public class ItemsParser {
                 }
                 else{
                     Integer tempCount = itemMap.get(iPrice);
-                    itemMap.put(iPrice,tempCount++);
+                    tempCount++;
+                    itemMap.put(iPrice,tempCount);
                 }
             }
             for (Map.Entry<String, Integer> set2 : itemMap.entrySet()) {
